@@ -1,0 +1,144 @@
+<!-- ----------------- Get html/text ----------------------- -->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    alert("Text: " + $("#test").text());
+  });
+  $("#btn2").click(function(){
+    alert("HTML: " + $("#test").html());
+  });
+});
+</script>
+</head>
+<body>
+
+<p id="test">This is some <b>bold</b> text in a paragraph.</p>
+
+<button id="btn1">Show Text</button>
+<button id="btn2">Show HTML</button>
+
+</body>
+</html>
+
+<!-- ----------------- Get val ----------------------- -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    alert("Value: " + $("#test").val());
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Name: <input type="text" id="test" value="Mickey Mouse"></p>
+
+<button>Show Value</button>
+
+</body>
+</html> -->
+
+<!-- ----------------- Get attr ----------------------- -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    alert($("#w3s").attr("href"));
+  });
+});
+</script>
+</head>
+<body>
+
+<p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+
+<button>Show href Value</button>
+
+</body>
+</html> -->
+
+
+<!-- ----------------- Set ----------------------- -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#test1").text("Hello world!");
+  });
+  $("#btn2").click(function(){
+    $("#test2").html("<b>Hello world!</b>");
+  });
+  $("#btn3").click(function(){
+    $("#test3").val("Dolly Duck");
+  });
+});
+</script>
+</head>
+<body>
+
+<p id="test1">This is a paragraph.</p>
+<p id="test2">This is another paragraph.</p>
+
+<p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+
+<button id="btn1">Set Text</button>
+<button id="btn2">Set HTML</button>
+<button id="btn3">Set Value</button>
+
+</body>
+</html> -->
+
+<!-- ----------------- Callback ----------------------- -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#test1").text(function(i, origText){
+      return "Old text: " + origText + " New text: Hello world! (index: " + i + ")"; 
+    });
+  });
+
+  $("#btn2").click(function(){
+    $("#test2").html(function(i, origText){
+      return "Old html: " + origText + " New html: Hello <b>world!</b> (index: " + i + ")"; 
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<p id="test1">This is a <b>bold</b> paragraph.</p>
+<p id="test2">This is another <b>bold</b> paragraph.</p>
+
+<button id="btn1">Show Old/New Text</button>
+<button id="btn2">Show Old/New HTML</button>
+
+</body>
+</html> -->
+
+
+<!-- ----------------- Add ----------------------- -->
+
+<!-- ----------------- Remove ----------------------- -->
+
+<!-- ----------------- dimensions ----------------------- -->

@@ -1,0 +1,49 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#chmod").click(function(){
+    $(".day").toggleClass("night");
+    
+    if  ($("#greeting").text() == "Good Morning!")
+    {
+      $("#greeting").text("Good Night!")
+    }
+
+    else
+    {
+      $("#greeting").text("Good Morning!")
+
+    }
+
+
+  });
+});
+</script> 
+<style>
+  .day {
+    background-image: url("light.jpg");
+  }
+
+  .night {
+    background-image: url("night.jpg");
+    color: yellow;
+  }
+
+  p{
+    text-align: center;
+    top: 50%;
+    position: relative;
+  }
+</style>
+</head>
+<body>
+<div class="day" style="width: 500px; height: 500px;">
+<p id="greeting"> Good Morning!</p>
+  </div>
+
+  <button id="chmod">change mode</button>
+
+</body>
+</html>

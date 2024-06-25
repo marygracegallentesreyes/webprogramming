@@ -1,0 +1,19 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#mouse").click(function(){
+    $(this).animate({
+      left: '+=150px',
+      top: '+=150px'
+    });
+  });
+});
+</script> 
+</head>
+<body>
+<img src="mouse.png" id="mouse" style="position: absolute; width: 150px; height: 120px;">
+
+</body>
+</html>

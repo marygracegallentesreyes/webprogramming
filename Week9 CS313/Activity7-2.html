@@ -8,12 +8,14 @@ $(document).ready(function(){
     
     if  ($("#greeting").text() == "Good Morning!")
     {
-      $("#greeting").text("Good Night!")
+      $("#greeting").text("Good Night!");
+      console.log("hi");
     }
 
-    else
+    else if ($("#greeting").text() == "Good Night!")
     {
-      $("#greeting").text("Good Morning!")
+      $("#greeting").text("Good Morning!");
+      console.log("hello");
 
     }
 
@@ -24,6 +26,7 @@ $(document).ready(function(){
 <style>
   .day {
     background-image: url("light.jpg");
+    color: red;
   }
 
   .night {
@@ -40,8 +43,8 @@ $(document).ready(function(){
 </head>
 <body>
 <div class="day" style="width: 500px; height: 500px;">
-<p id="greeting"> Good Morning!</p>
-  </div>
+<p id="greeting">Good Morning!</p>
+</div>
 
   <button id="chmod">change mode</button>
 

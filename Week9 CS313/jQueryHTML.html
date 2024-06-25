@@ -1,5 +1,5 @@
 <!-- ----------------- Get html/text ----------------------- -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -22,7 +22,7 @@ $(document).ready(function(){
 <button id="btn2">Show HTML</button>
 
 </body>
-</html>
+</html> -->
 
 <!-- ----------------- Get val ----------------------- -->
 
@@ -354,7 +354,7 @@ $(document).ready(function(){
 
 <!-- ----------------- dimensions w/h ----------------------- -->
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -362,8 +362,8 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("button").click(function(){
     var txt = "";
-    txt += "Width of div: " + $("#div1").width() + "</br>";
-    txt += "Height of div: " + $("#div1").height();
+    txt += "Width of div: " + $("#div1").outerWidth(true) + "</br>";
+    txt += "Height of div: " + $("#div1").outerHeight(true);
     $("#div1").html(txt);
   });
 });
@@ -390,7 +390,7 @@ $(document).ready(function(){
 <p>height() - returns the height of an element.</p>
 
 </body>
-</html> -->
+</html>
 
 
 <!-- ----------------- dimensions inner w/h ----------------------- -->

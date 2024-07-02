@@ -1,0 +1,136 @@
+<!-- --------------------Change-------------------------- -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("input").change(function(){
+    document.write($("#xx").val());
+  });
+});
+</script>
+</head>
+<body>
+
+<input type="text" name="xx" id="xx">
+
+<p>Write something in the input field, and then press enter or click outside the field.</p>
+
+</body>
+</html>
+
+
+<!-- --------------------Change-------------------------- -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".field").change(function(){
+    $(this).css("background-color", "#D6D6FF");
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Attach a function to run when an element has been changed:</p>
+
+Enter your name: <input class="field" type="text">
+<p>Write something in the input field, and then press enter or click outside the field.</p>
+
+Car:
+<select class="field" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+
+<p>Select an option in the drop-down list.</p>
+
+</body>
+</html> -->
+
+<!-- -------------ON ------------------------- -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").on("mouseover mouseout", function(){
+    $(this).toggleClass("intro");
+  });
+});
+</script>
+<style>
+.intro {
+  font-size: 150%;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<p>Move the mouse pointer over this paragraph.</p>
+
+</body>
+</html> -->
+
+
+<!-- ---------------ON 1------------------------ -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").on("click", function(){
+    alert("The paragraph was clicked.");
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Click this paragraph.</p>
+
+</body>
+</html> -->
+
+
+<!-- ------------------------------ OFF ---------------------------------- -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").on("click", function(){
+    $(this).css("background-color", "pink");
+  });
+  $("button").click(function(){
+    $("p").off("click");
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Click this paragraph to change its background color.</p>
+<p>Click the button below and then click on this paragraph (the click event is removed).</p>
+
+<button>Remove the click event handler</button>
+
+</body>
+</html> -->
